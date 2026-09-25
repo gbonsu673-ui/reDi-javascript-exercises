@@ -95,6 +95,7 @@ const student = ["David", ["HTML", "CSS", "JS", "React"], [98, 85, 90, 95]];
 let [name, skills, [, , jsScore, reactScore]] = student;
 console.log(name, skills, jsScore, reactScore);
 
+
 // 2. Write a function called convertArrayToObject which can convert the array to a structure object.
 const students = [
   ["David", ["HTML", "CSS", "JS", "React"], [98, 85, 90, 95]],
@@ -115,6 +116,7 @@ const convertArrayToObject = function (students) {
   return objectsArray;
 };
 console.log(convertArrayToObject(students));
+
 
 // 4. Copy the student object to newStudent without mutating the original object. In the new object add the following ?
 // Add Bootstrap with level 8 to the front end skill sets
