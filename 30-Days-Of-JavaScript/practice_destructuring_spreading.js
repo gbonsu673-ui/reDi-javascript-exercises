@@ -157,7 +157,8 @@ const copiedStudent = {
       { skill: "Express", level: 9 }
     ],
     
-    dataBase: [...eachStudent.skills.dataBase, 
+    dataBase: [
+      ...eachStudent.skills.dataBase, 
       { skill: "SQL", level: 8 }
     ],
 
