@@ -46,7 +46,7 @@ const users = [
 // Use destructuring to get name, age, and city from each user.
 // Use if/else to print whether each user is an adult.
 // Display this information along their city
-for (user of users) {
+for (const user of users) {
   const { name, age, city } = user;
   console.log(
     `${name} is ${age >= 18 ? "an adult" : "not an adult"} and lives in ${city}`,

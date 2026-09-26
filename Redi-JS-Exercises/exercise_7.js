@@ -24,7 +24,7 @@ const products = [
 // ------------------------------------
 // 1 + 2. Loop + if/else
 // ------------------------------------
-for (product of products) {
+for (const product of products) {
   console.log(
     `${product.name} : ${product.stock === 0 ? "Out of stock" : "In stock"}`,
   );
