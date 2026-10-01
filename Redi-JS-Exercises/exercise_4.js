@@ -28,10 +28,9 @@ const students = [
 
 // Your Solution:
 let totalScore = 0;
-for (const student of students) {
-  totalScore += student.score;
-  let grade = student.score >= 50 ? "passed" : "failed";
-  console.log(`${student.name} ${grade}`);
+for (const {name, score} of students) {
+  totalScore += score;
+  console.log(`${name} ${score >= 50 ? "passed" : "failed"}`);
 }
 const averageScore = totalScore / students.length;
 console.log(`Total: ${totalScore}`);
