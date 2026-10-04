@@ -22,15 +22,14 @@ const cart = [
 // 1. Use map() to calculate each item's total
 // ------------------------------------
 const itemsTotalPrices = cart.map((item) => item.price * item.quantity);
-//console.log(itemsTotalPrices);
+console.log(itemsTotalPrices);
 // expected output: [800, 50, 50, 400]
 
 // ------------------------------------
 // 2. Use filter() to find expensive items
 // ------------------------------------
 const expensiveItems = cart.filter((item) => item.price > 100);
-//console.log(expensiveItems);
-// expected output: [800, 50, 50, 400]
+console.log(expensiveItems);
 
 // ------------------------------------
 // 3. Use map() + spread to create new objects
@@ -48,5 +47,5 @@ const totalCostofEntireCart = cart.reduce(
   (totalCost, item) => totalCost + item.price * item.quantity,
   0,
 );
-//console.log(`Cart total: ${totalCostofEntireCart}`);
+console.log(`Cart total: ${totalCostofEntireCart}`);
 // expected output: Cart total: ***
